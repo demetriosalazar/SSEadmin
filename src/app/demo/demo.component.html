@@ -1,0 +1,64 @@
+<div class="container-fluid">
+
+    <div class="row">
+      <div class="col">
+        <h1>Eventos</h1>
+      </div>
+      <div class="col right" style="margin-top: 1rem;">
+    <button (click)="cerrarSesion()" class="btn btn-danger">Cerrar Sesión</button>
+      </div>
+    </div>
+    
+    <hr>
+    
+  <div class="row">
+    <button class="btn btn-success p-3" (click)="agregar()">Agregar</button>
+
+  </div>
+  <div class="container " style="min-height: 100vh;">
+    <div class="row">
+        <div class="col-lg-4 p-3 center">
+            <div class="card" style="max-width: 25rem; min-width: 15rem;">
+                <img src="https://www.cancun.tecnm.mx/wp-content/uploads/2017/09/LOGO-ITCANCUN-MARCA-REGISTRADA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button (click)="actualizar()" class="btn btn-primary">Actualizar</button>
+                  <button (click)="eliminar()" class="btn btn-danger" style="margin-left:1.5rem;">Eliminar</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 p-3 center">
+            <div class="card" style="max-width: 25rem; min-width: 15rem;">
+                <img src="https://www.cancun.tecnm.mx/wp-content/uploads/2017/09/LOGO-ITCANCUN-MARCA-REGISTRADA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button href="#" class="btn btn-primary">Actualizar</button>
+                  <button href="#" class="btn btn-danger" style="margin-left:1.5rem;">Eliminar</button>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 p-3 center">
+            <div class="card" style="max-width: 25rem; min-width: 15rem;">
+                <img src="https://www.cancun.tecnm.mx/wp-content/uploads/2017/09/LOGO-ITCANCUN-MARCA-REGISTRADA.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button href="#" class="btn btn-primary">Actualizar</button>
+                  <button href="#" class="btn btn-danger" style="margin-left:1.5rem;">Eliminar</button>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<app-modal-actualizar *ngIf="switchModalAct" class="modal_p"></app-modal-actualizar>
+<app-modal-agregar *ngIf="switchModalAgr" class="modal_p"></app-modal-agregar>
+
